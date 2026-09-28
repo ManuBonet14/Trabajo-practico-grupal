@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTOS-KALLAMARKA</title>
+    <style>
+        label, input, textarea{
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>  
@@ -18,44 +24,60 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
+        <p><a href="#formulario">Ir directamente al formulario de contacto</a></p>
     </header> 
-    <h2>Email</h2>
-    <a href="mailto:turismotusueño@live.com">
-        <img src="img/mail.png" alt="Email" width="30">
-        turismotusueño@live.com</a>
-    <h2>Telefono</h2>
-    <a href="tel:541112345678">
-        <img src="img/telefono.png" alt="Telefono" width="30">541112345678
-    </a>
-    <h2>Instagram</h2>
-    <a href="https://www.instagram.com/@turismotusueño" target="_blank">
-        <img src="img/intagram.png" width="20" alt="Instagram">@turismotusueño
-    </a>
-    <h2>Direccion</h2>
-    <p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Corrientes+980" target="_blank">
-            <img src="img/ubicacion.png" alt="Ubicacion" width="30">
-        </a>
-        Av. Corrientes 980, Capital Federal, Buenos Aires, Argentina
+   <main>
+        <section>
+            <h2>Email</h2>
+            <a href="mailto:turismotusueno@live.com">
+                <img src="img/mail.png" alt="Email de contacto" width="30">
+                turismotusueno@live.com
+            </a>
 
-    </p>
-    <h2>Formulario de contacto</h2>
-    <style>
-        label, input, textarea{
-            display: block;
-            margin-bottom: 10px;
-        }
-    </style>
-    <form>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre"><br>
-        <label for="email">Correo electronico</label>
-        <input type="email" id="email" name="email"><br>
-        <label for="mensaje">Mensaje</label>
-        <textarea name="mensaje" id="mensaje"></textarea><br>
-        <button type="submit">Enviar</button>
-    </form>
-    
-    
+            <h2>Teléfono</h2>
+            <a href="tel:+541112345678">
+                <img src="img/telefono.png" alt="Teléfono de contacto" width="30">
+                +54 11 1234-5678
+            </a>
+
+            <h2>Instagram</h2>
+            <!-- Agregado rel="noopener noreferrer" -->
+            <a href="https://www.instagram.com/turismotusueno" target="_blank" rel="noopener noreferrer">
+                <img src="img/instagram.png" alt="Perfil de Instagram" width="20">
+                @turismotusueno
+            </a>
+
+            <h2>Dirección</h2>
+            <p>
+                <!-- Agregado rel="noopener noreferrer" -->
+                <a href="https://www.google.com/maps/search/?api=1&query=Avenida+Corrientes+980" target="_blank" rel="noopener noreferrer">
+                    <img src="img/ubicacion.png" alt="Ubicación en Google Maps" width="30">
+                    Av. Corrientes 980, Capital Federal, Buenos Aires, Argentina
+                </a>
+            </p>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de contacto</h2>
+            <form action="#" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea name="mensaje" id="mensaje"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Agregada etiqueta <footer> -->
+    <footer>
+        <p>&copy; 2026 Kallamarka Turismo. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
