@@ -1,0 +1,37 @@
+:root{
+    --color-fondo: #e6dbe5;
+    --color-texto: #090453;
+    --color-acento: #1518c2;  
+    --color-fondo-header:#cabfbb;
+    --color-fondo-footer:#d3d8d6;
+}
+body {
+    font-family: 'Clarity City', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color:var(--color-fondo);
+    color: var(--color-texto);
+    max-width: 1400px;               
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header{ 
+    background-color: var(--color-fondo-header);
+    padding: 1rem;
+}
+footer{
+    background-color: var(--color-fondo-footer);
+    padding: 1rem;
+}
+h1{
+    font-size: 2.5rem;
+    color:darkolivegreen;
+}
+h2{
+    font-size: 2rem;
+     color:var(--color-acento);
+}
+h3{
+    font-size: 1.5rem;
+    color:#0fad24;
+}
