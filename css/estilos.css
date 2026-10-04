@@ -1,37 +1,81 @@
-:root{
-    --color-fondo: #e6dbe5;
-    --color-texto: #090453;
-    --color-acento: #1518c2;  
-    --color-fondo-header:#cabfbb;
-    --color-fondo-footer:#d3d8d6;
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-body {
-    font-family: 'Clarity City', sans-serif;
-    font-size: 1rem;
-    line-height: 1.5;
-    background-color:var(--color-fondo);
+
+/* ===== Navegación ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
     color: var(--color-texto);
-    max-width: 1400px;               
-    margin: 0 auto;
-    padding: 0 1rem;
 }
-header{ 
-    background-color: var(--color-fondo-header);
+
+nav a:hover {
+    color: var(--color-acento);
+}
+
+/* ===== Variante de color para la página Ciudad ===== */
+.pagina-ciudad {
+    background-color: #f0ece3;
+}
+
+.pagina-ciudad header {
+    background-color: #c9b8a8;
+}
+
+/* ===== Secciones de contenido ===== */
+section {
+    margin: 2rem 0;
     padding: 1rem;
 }
-footer{
-    background-color: var(--color-fondo-footer);
-    padding: 1rem;
+
+section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 0.3rem;
 }
-h1{
-    font-size: 2.5rem;
-    color:darkolivegreen;
+
+/* ===== Articles dentro de las secciones ===== */
+article {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
-h2{
-    font-size: 2rem;
-     color:var(--color-acento);
+
+article p {
+    margin-bottom: 0.8rem;
 }
-h3{
-    font-size: 1.5rem;
-    color:#0fad24;
+
+article img {
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+
+/* ===== Lista de definiciones (Datos clave) ===== */
+#datos dt {
+    margin-top: 0.6rem;
+}
+
+#datos dd {
+    margin-left: 0;
+    margin-bottom: 0.4rem;
+}
+
+/* ===== Listas ordenadas dentro de los articles ===== */
+article ol {
+    margin-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+article ol li {
+    margin-bottom: 0.4rem;
 }
