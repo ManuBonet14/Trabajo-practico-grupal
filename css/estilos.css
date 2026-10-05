@@ -1,0 +1,176 @@
+:root{
+    --color-fondo: #e6dbe5;
+    --color-texto: #090453;
+    --color-acento: #1518c2;  
+    --color-fondo-header:#cabfbb;
+    --color-fondo-footer:#d3d8d6;
+}
+body {
+    font-family: 'Clarity City', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color:var(--color-fondo);
+    color: var(--color-texto);
+    max-width: 1400px;               
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+header{ 
+    background-color: var(--color-fondo-header);
+    padding: 1rem;
+}
+footer{
+    background-color: var(--color-fondo-footer);
+    padding: 1rem;
+}
+h1{
+    font-size: 2.5rem;
+    color:darkolivegreen;
+}
+h2{
+    font-size: 2rem;
+     color:var(--color-acento);
+}
+h3{
+    font-size: 1.5rem;
+    color:#0fad24;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:#187cfe;
+    cursor: pointer;
+}
+/* ===== Reset ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Navegación ===== */
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 60px;
+}
+
+nav a{
+  background-color: var(--color-fondo-header);
+  color: var(--color-acento);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 22px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover{
+    background-color: #f0f0f0;
+    color: #187cfe;
+    cursor: pointer;
+}
+
+/* ===== Variante de color para la página Ciudad ===== */
+.pagina-ciudad {
+    background-color: #f0ece3;
+}
+
+.pagina-ciudad header {
+    background-color: #c9b8a8;
+}
+
+.pagina-ciudad main {
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+}
+
+/* ===== Secciones de contenido ===== */
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+}
+
+section h2 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 0.3rem;
+}
+
+/* ===== Articles dentro de las secciones ===== */
+article {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+article p {
+    margin-bottom: 0.8rem;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+
+/* ===== Lista de definiciones (Datos clave) ===== */
+#datos dt {
+    margin-top: 0.6rem;
+}
+
+#datos dd {
+    margin-left: 0;
+    margin-bottom: 0.4rem;
+}
+
+#formulario input, 
+#formulario textarea {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+#formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--color-texto);
+}
+
+#formulario button {
+  padding: 10px 20px;
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#formulario button:hover{
+    background-color: #187cfe;
+    cursor: pointer;
+}
+
+/* ===== Listas ordenadas dentro de los articles ===== */
+article ol {
+    margin-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+article ol li {
+    margin-bottom: 0.4rem;
+}
