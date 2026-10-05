@@ -43,23 +43,29 @@ h3{
 }
 
 /* ===== Navegación ===== */
-nav {
-    padding-top: 0.8rem;
-}
-
-nav ul {
-    list-style: none;
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    gap: 1.5rem;
+    gap: 60px;
 }
 
-nav a {
-    text-decoration: none;
-    color: var(--color-texto);
+nav a{
+  background-color: var(--color-fondo-header);
+  color: var(--color-acento);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-size: 22px;
+  padding: 12px 24px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
 }
 
-nav a:hover {
-    color: var(--color-acento);
+nav a:hover{
+    background-color: #f0f0f0;
+    color: #187cfe;
+    cursor: pointer;
 }
 
 /* ===== Variante de color para la página Ciudad ===== */
