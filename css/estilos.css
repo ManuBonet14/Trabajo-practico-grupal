@@ -35,6 +35,15 @@ h3{
     font-size: 1.5rem;
     color:#0fad24;
 }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color:#187cfe;
+    cursor: pointer;
+}
 /* ===== Reset ===== */
 * {
     box-sizing: border-box;
@@ -122,6 +131,38 @@ article img {
 #datos dd {
     margin-left: 0;
     margin-bottom: 0.4rem;
+}
+
+#formulario input, 
+#formulario textarea {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 2px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+#formulario label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--color-texto);
+}
+
+#formulario button {
+  padding: 10px 20px;
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#formulario button:hover{
+    background-color: #187cfe;
+    cursor: pointer;
 }
 
 /* ===== Listas ordenadas dentro de los articles ===== */
