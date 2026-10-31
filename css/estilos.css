@@ -76,17 +76,25 @@ nav a:hover{
     color: #187cfe;
     cursor: pointer;
 }
-
-/* ===== Variante de color para la página Ciudad ===== */
-.pagina-ciudad {
-    background-color: #f0ece3;
+/* ===== Navegación de footer ===== */
+footer nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 1rem;
 }
 
-.pagina-ciudad header {
+footer p {
+    margin-top: 1rem;
+}
+
+/* ===== Variante de color para la página  ===== */
+
+ header {
     background-color: #c9b8a8;
 }
 
-.pagina-ciudad main {
+ main {
     padding: 1.5rem 0;
     margin-bottom: 2rem;
 }
@@ -104,13 +112,17 @@ section h2 {
 }
 
 /* ===== Articles dentro de las secciones ===== */
-article {
+article, aside {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 1.2rem;
     margin-bottom: 1.5rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
+aside {
+    margin: -3rem 1rem 2rem;
+}
+
 
 article p {
     margin-bottom: 0.8rem;
@@ -174,3 +186,8 @@ article ol {
 article ol li {
     margin-bottom: 0.4rem;
 }
+ 
+label, input, textarea{
+            display: block;
+            margin-bottom: 10px;
+        }
