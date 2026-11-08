@@ -174,3 +174,111 @@ article ol {
 article ol li {
     margin-bottom: 0.4rem;
 }
+
+article {
+    position: relative;
+}
+
+.etiqueta-lugar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-acento);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    z-index: 2;
+}
+
+/* =====================================
+   BOOTSTRAP - PERSONALIZACIONES
+===================================== */
+
+/* Personalización de botones */
+
+.btn-primary {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-texto);
+    border-color: var(--color-texto);
+}
+
+/* Personalización de tarjetas */
+
+.card {
+    background-color: #ffffff;
+    color: var(--color-texto);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Personalización de etiquetas */
+
+.badge {
+    background-color: var(--color-acento);
+}
+
+/* =====================================
+   POSICIONAMIENTO
+===================================== */
+
+article {
+    position: relative;
+}
+
+.etiqueta-lugar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--color-acento);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    z-index: 2;
+}
+
+/* =====================================
+   BOOTSTRAP - PERSONALIZACIONES
+===================================== */
+
+/* Botones */
+
+.btn-primary {
+    background-color: var(--color-acento);
+    border-color: var(--color-acento);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-texto);
+    border-color: var(--color-texto);
+}
+
+/* Tarjetas */
+
+.card {
+    background-color: white;
+    color: var(--color-texto);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Etiquetas */
+
+.badge {
+    background-color: var(--color-acento);
+}
