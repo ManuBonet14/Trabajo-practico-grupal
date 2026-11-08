@@ -190,4 +190,23 @@ label, input, textarea{
 article img {
     max-width: 100%;
     height: auto;
-}      
+}     
+ /* ===== Flexbox: contenedor de cards ===== */
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.tarjetas h2 {
+    flex: 0 0 100%;
+}
+.tarjetas article {
+    flex: 1 1 30%;
+    min-width: 0;
+}
+.tarjetas article img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}   
