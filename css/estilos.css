@@ -52,28 +52,39 @@ a:hover{
 }
 
 /* ===== Navegación ===== */
-nav ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 60px;
-}
-
-nav a{
-  background-color: var(--color-fondo-header);
-  color: var(--color-acento);
-  text-decoration: none;
-  transition: color 0.2s ease;
-  font-size: 22px;
-  padding: 12px 24px;
-  border-radius: 6px;
+.navbar-nav .nav-link {
+  color: #000080 !important;  
+  font-size: 25px !important;
+  font-weight: 600;
+  padding: 12px 24px !important;
+  border-radius: 6px;         
   transition: all 0.2s ease;
 }
 
-nav a:hover{
-    background-color: #f0f0f0;
-    color: #187cfe;
+.navbar {
+  background-color: transparent !important; 
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+  margin-left: -1rem !important;
+  margin-right: -1rem !important;
+  width: calc(100% + 2rem) !important;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  font-size: 35px !important;
+  color: #000080 !important; 
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #d5d4d4 !important;
+  color: #187cfe !important;
+  cursor: pointer;
+}
+
+.navbar-brand:hover {
+    color: #187cfe !important;
     cursor: pointer;
 }
 /* ===== Navegación de footer ===== */
