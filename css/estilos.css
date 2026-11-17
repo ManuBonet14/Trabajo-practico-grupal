@@ -56,41 +56,52 @@ a:hover{
 }
 
 /* ===== Navegación ===== */
+
 .navbar-nav .nav-link {
-  color: #000080 !important;  
-  font-size: 25px !important;
-  font-weight: 600;
-  padding: 12px 24px !important;
-  border-radius: 6px;         
-  transition: all 0.2s ease;
+    color: #000080 !important;  
+    font-size: 25px !important;
+    font-weight: 600;
+    padding: 12px 24px !important;
+    border-radius: 6px;         
+    transition: color 0.2s ease;
 }
 
 .navbar {
-  background-color: transparent !important; 
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+    background-color: transparent !important;
+    background-image: 
+    linear-gradient(rgba(202, 191, 187, 0.78), rgba(202, 191, 187, 0.78)),
+    url('../img/fondoNav.jpg') !important;
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: center;
 
-  margin-left: -1rem !important;
-  margin-right: -1rem !important;
-  width: calc(100% + 2rem) !important;
+    padding-top: 25px !important;
+    padding-bottom: 25px !important;
 }
 
 .navbar-brand {
-  font-weight: 800;
-  font-size: 35px !important;
-  color: #000080 !important; 
+    font-weight: 800;
+    font-size: 35px !important;
+    color: #000080 !important; 
 }
 
 .navbar-nav .nav-link:hover {
-  background-color: #d5d4d4 !important;
-  color: #187cfe !important;
-  cursor: pointer;
+    background-color: #cabfbb !important;
+    background-image:
+    linear-gradient(rgba(255, 250, 248, 0.78), rgba(255, 250, 248, 0.78)),
+    url(../img/fondoNav.jpg);
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    background-position: center;
+    color: #187cfe !important;
+    cursor: pointer;
 }
 
 .navbar-brand:hover {
     color: #187cfe !important;
     cursor: pointer;
 }
+
 /* ===== Navegación de footer ===== */
 footer nav ul {
     display: flex;
@@ -239,6 +250,34 @@ article img {
     object-fit: cover;
 }
 
+/*Tarjetas exclusivas de lugares.html*/
+
+.tarjetas-lugares {
+    align-items: flex-start !important;
+}
+
+.tarjetas-lugares article {
+    display: flex;
+    flex-direction: column;
+    min-height: 770px !important;
+}
+
+.tarjetas-lugares article button {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.tarjetas-lugares .btn-primary {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: var(--color-texto);
+}
+
+.tarjetas-lugares .btn-primary:hover {
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+}
+
 /* =====================================
    POSICIONAMIENTO
 ===================================== */
@@ -274,6 +313,14 @@ article {
 .btn-primary:hover {
     background-color: var(--color-texto);
     border-color: var(--color-texto);
+}
+
+button[aria-expanded="false"] .texto-abierto {
+  display: none;
+}
+
+button[aria-expanded="true"] .texto-cerrado {
+  display: none;
 }
 
 /* Tarjetas */
