@@ -21,7 +21,7 @@ main{
 }
 header{ 
     background-color: var(--color-fondo-header);
-    padding: 1rem;
+    padding: 0;
 }
 footer{
     background-color: var(--color-fondo-footer);
