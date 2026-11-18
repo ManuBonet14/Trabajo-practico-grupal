@@ -13,6 +13,6 @@ boton.addEventListener("click", () => {
         localStorage.setItem("modo-oscuro", "activo");
     } else {
         boton.textContent = "Modo oscuro";
-        localStorage.setItem("modo-oscuro", "inactivo");
+        localStorage.removeItem("modo-oscuro");
     }
 });
