@@ -342,3 +342,112 @@ button[aria-expanded="true"] .texto-cerrado {
     background-color: var(--color-acento);
 }
 /* boton de modo oscuro */
+/* ===== Formulario: mensajes de error ===== */
+#formulario .error-msg {
+    display: none;
+    color: #c62828;
+    font-size: 0.9rem;
+    margin: -10px 0 15px;
+}
+
+#formulario input:user-invalid,
+#formulario textarea:user-invalid {
+    border-color: #c62828;
+}
+
+#formulario input:user-invalid + .error-msg,
+#formulario textarea:user-invalid + .error-msg {
+    display: block;
+}
+
+/* ===== Modo oscuro ===== */
+body.oscuro {
+    color-scheme: dark;
+    --color-fondo: #15121f;
+    --color-texto: #ece9f7;
+    --color-acento: #8ab4ff;
+    --color-fondo-header: #251f35;
+    --color-fondo-footer: #251f35;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+body.oscuro header {
+    background-color: var(--color-fondo-header);
+}
+
+body.oscuro footer {
+    background-color: var(--color-fondo-footer);
+}
+
+body.oscuro h1 {
+    color: #c5d99a;
+}
+
+body.oscuro h2 {
+    color: var(--color-acento);
+}
+
+body.oscuro h3 {
+    color: #5fe07a;
+}
+
+body.oscuro a {
+    color: var(--color-acento);
+}
+
+body.oscuro .navbar.bg-body-tertiary {
+    background-color: #251f35 !important;
+}
+
+body.oscuro .navbar-brand,
+body.oscuro .nav-link {
+    color: var(--color-acento);
+}
+
+body.oscuro .navbar-toggler {
+    filter: invert(1);
+}
+
+body.oscuro nav a {
+    background-color: transparent;
+    color: var(--color-acento);
+}
+
+body.oscuro nav a:hover {
+    background-color: #3a3350;
+    color: #b5d0ff;
+}
+
+body.oscuro article,
+body.oscuro aside {
+    background-color: #251f35;
+}
+
+body.oscuro #formulario input,
+body.oscuro #formulario textarea {
+    background-color: #251f35;
+    color: var(--color-texto);
+    border-color: #5a5370;
+}
+
+body.oscuro #formulario button {
+    background-color: var(--color-acento);
+    color: #15121f;
+}
+
+body.oscuro #formulario .error-msg {
+    color: #ff8a80;
+}
+
+body.oscuro #formulario input:user-invalid,
+body.oscuro #formulario textarea:user-invalid {
+    border-color: #ff8a80;
+}
+
+body.oscuro #btn-mode {
+    background-color: transparent;
+    color: var(--color-acento);
+    border: 2px solid var(--color-acento);
+    border-radius: 6px;
+}
