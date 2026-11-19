@@ -16,3 +16,26 @@ boton.addEventListener("click", () => {
         localStorage.removeItem("modo-oscuro");
     }
 });
+
+
+// VALIDACIÓN DE FORMULARIO
+
+const formContacto = document.querySelector('#formulario form');
+const cajaMensaje = document.querySelector('#mensaje-estado');
+
+if (formContacto) {
+  formContacto.addEventListener('submit', (evento) => {
+    evento.preventDefault();
+
+    const nombre = document.querySelector('#nombre').value.trim();
+    const email = document.querySelector('#email').value.trim();
+    const mensaje = document.querySelector('#mensaje').value.trim();
+
+    if (nombre === '' || email === '' || mensaje === '') {
+      cajaMensaje.innerHTML = '<div class="alert alert-danger mt-3" role="alert">Por favor, completá todos los campos obligatorios.</div>';
+    } else {
+      cajaMensaje.innerHTML = '<div class="alert alert-success mt-3" role="alert">¡Consulta enviada con éxito! Nos contactaremos pronto.</div>';
+      formContacto.reset();
+    }
+  });
+}
