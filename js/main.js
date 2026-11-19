@@ -39,3 +39,25 @@ if (formContacto) {
     }
   });
 }
+
+
+// SMART HEADER (Ocultar al bajar / Mostrar al subir)
+
+let ultimoScroll = 0;
+const header = document.querySelector('header');
+
+if (header) {
+  window.addEventListener('scroll', () => {
+    const scrollActual = window.scrollY;
+
+    if (scrollActual > ultimoScroll && scrollActual > 100) {
+      header.classList.add('header-oculto');
+    } 
+
+    else if (scrollActual < ultimoScroll) {
+      header.classList.remove('header-oculto');
+    }
+
+    ultimoScroll = scrollActual <= 0 ? 0 : scrollActual;
+  });
+}
